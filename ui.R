@@ -9,7 +9,7 @@ library(shiny)
 shinyUI(fluidPage(
 
   # Application title
-  titlePanel("Calculation of Ammonia/Urea production cost as the chang of natural gas price"),
+  titlePanel("Calculation of Ammonia/Urea production cost as the change of natural gas price"),
 
   # Sidebar with a slider input for number of bins
   sidebarLayout(
@@ -26,8 +26,8 @@ shinyUI(fluidPage(
 
     # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("plot1")
-
+       plotOutput("plot1"),
+       h3(textOutput("text"))
     )
   )
 ))
